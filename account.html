@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="images/SYNTEK.png"></a>
+    
+        <nav class="navbar">
+    
+    
+    
+            <a class="active" href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="products.html">Shop</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#about">About Us</a>
+        </nav>
+    
+    
+        <div class="icons">
+            <i class='bx bx-menu' id="menu-bars"></i>
+            <i class='bx bx-search-alt-2' id="search-icons"></i>
+            <a href="account.html" class="bx bxs-user"></a>
+            <a href="cart.html" class="bx bxs-cart-alt"></a>
+        </div>
+    </header>
+
+<!------------------------------------acount- page------------->
+
+
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/login.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="username">
+                        <input type="text" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="logos">
+
+    <div class="logos-slide">
+        <img src="images/logos/apple.webp" />
+        <img src="images/logos/bose.webp" />
+        <img src="images/logos/google.webp" />
+        <img src="images/logos/haylou.png" />
+        <img src="images/logos/JBL.webp" />
+        <img src="images/logos/Marshall.webp" />
+        <img src="images/logos/samsung.webp" />
+        <img src="images/logos/Sony.webp" />
+    </div>
+    
+    <div class="logos-slide">
+        <img src="images/logos/apple.webp" />
+        <img src="images/logos/bose.webp" />
+        <img src="images/logos/google.webp" />
+        <img src="images/logos/haylou.png" />
+        <img src="images/logos/JBL.webp" />
+        <img src="images/logos/Marshall.webp" />
+        <img src="images/logos/samsung.webp" />
+        <img src="images/logos/Sony.webp" />
+    </div>
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    
+<footer class="footer-distributed">
+    
+    <div class="footer-left">
+        <img src="images/SYNTEK.png" alt="">
+
+        <p class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="products.html">Shop</a>
+            <a href="#">Contact Us</a>
+
+
+        </p>
+
+<p class="footer-company-name">Yahia Zaher @ 2024 <strong>Syntex Studio</strong> All rights reserved</p>
+
+
+    </div>
+
+
+    <div class="footer-center">
+        <div>
+            <i class='bx bxs-map' ></i>
+            <p><span>236/6</span>Dubai</p>
+        </div>
+
+
+        <div>
+            <i class='bx bxs-phone' ></i>
+            <p><a href="tel:+971505014437">0 5050 144 37</a></p>
+        </div>
+
+        <div>
+            <i class='bx bx-envelope' ></i>
+            <p><a href="mailto:yahya.zaher.ae@gmail.com">yahya.zaher.ae@gmail.com</a></p>
+        </div>
+    </div>
+
+<div class="footer-right">
+    <p class="footer-company-about">
+        <span>About the company</span>
+        <strong>Syntax Studio</strong>is a Youtube channel where you can find more creative CSS Animations and 
+        Effects alon with 
+        HTML, JavaScript and Projects using C/C++.
+    </p>
+
+
+    <div class="footer-icons">
+        <a href="https://www.facebook.com/profile.php?id=100071434483557&mibextid=9R9pXO"><i class='bx bxl-facebook' ></i></a>
+        <a href="https://www.instagram.com/yzn.3927?igshid=YWYwM2I1ZDdmOQ%3D%3D&fbclid=IwAR2qtbV8ou4zegdrrgLnsGPggGw8XMH60b3fZhDXyns9AGpHEL6hb5-D1dY"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://wa.me/+971505014437"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="https://www.youtube.com/@yahya.zaher97"><i class='bx bxl-youtube' ></i></a>
+    </div>
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+<!--------------------------js for toggle form-------------->
+
+
+<script>
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    }
+</script>
+
+
+
+
+
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+
+
+   function register() {
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+
+   }
+
+
+
+
+   function login() {
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+
+   }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
